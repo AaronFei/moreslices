@@ -11,6 +11,8 @@ func DeleteAll[E any](s []E, pFunc func(e E) bool) []E {
 	return s
 }
 
+// Insert the element to specific index
+// return nil if index out of range
 func Insert[E any](s []E, e E, index int) []E {
 	if index > len(s) {
 		return nil
